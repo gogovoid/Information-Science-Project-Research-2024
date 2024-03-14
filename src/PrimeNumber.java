@@ -9,7 +9,7 @@ public class PrimeNumber {
         if(number < 2){
             count = 999;  // 0, 1 etc
         }else {
-            for(int i=2; i< number; i=i+1){  // -2 loop
+            for(int i=2; i*i <= number; i=i+1){  // Performance improvement is achieved even when the input number is not prime number.
                 if(number % i == 0){
                     count = count + 1;
                     break;  // Performance is improved by escaping from the for loop when the first divisor is found.
