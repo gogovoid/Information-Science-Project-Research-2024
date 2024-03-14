@@ -1,0 +1,1 @@
+This is a remote repository of the 'Information Science Project Research' class held at Incheon Science High School in the first semester of the 2024 school year. In this repository, we upload and manage the program code and practice examples studied in class.
