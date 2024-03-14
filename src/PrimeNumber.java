@@ -12,7 +12,9 @@ public class PrimeNumber {
             for(int i=2; i< number; i=i+1){  // -2 loop
                 if(number % i == 0){
                     count = count + 1;
+                    break;  // Performance is improved by escaping from the for loop when the first divisor is found.
                 }
+                System.out.print(i + " ");
             }
         }
         if(count == 0)
