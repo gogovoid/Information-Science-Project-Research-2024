@@ -11,6 +11,7 @@ public abstract class Pokemon{
     }
 
     public void performFly(){
+        System.out.print(this.getName());
         this.flyable.fly();
     }
 
