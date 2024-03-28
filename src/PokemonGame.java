@@ -1,13 +1,24 @@
 import pokemons.Pikachu;
 import pokemons.Pokemon;
+import pokemons.Squirtle;
 
 public class PokemonGame {
     public static void main(String[] args) {
+        Squirtle s2 = new Squirtle("Squirtle", 70);
         Pikachu pika1 = new Pikachu("Pikachu", 50);
-        Pikachu pika2 = new Pikachu();
-        System.out.println(pika1.getName());
-        System.out.println(pika1.getHp());
-//
+        pika1.info();
+        s2.info();
+
+//        Pikachu pika2 = new Pikachu();
+//        Squirtle s1 = new Squirtle();
+//        Squirtle s2 = new Squirtle("Squirtle", 70);
+//        System.out.println(pika1.getName());
+//        System.out.println(pika1.getHp());
+//        System.out.println(s2.getName());
+//        s1.setName("Squirtle");
+//        s1.setHp(65);
+//        System.out.println(s1.getHp());
+
 //        Pokemon p2 = new Pokemon("Squirtle", 70);
 //
 //        Pokemon p1 = new Pokemon();
