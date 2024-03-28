@@ -1,5 +1,6 @@
 package pokemons;
 
 public interface Flyable {
-    public abstract void fly();
+    //public abstract void fly();
+    void fly();
 }
