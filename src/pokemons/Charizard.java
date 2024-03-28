@@ -1,7 +1,6 @@
 package pokemons;
 
-public class Charizard extends Pokemon implements Flyable{
-
+public class Charizard extends Pokemon {
     @Override
     public void attack() {
         System.out.println("Wide area fire attack~");
