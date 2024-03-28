@@ -10,7 +10,7 @@ public abstract class Pokemon{
         this.flyable = flyable;
     }
 
-    public void performFlyable(){
+    public void performFly(){
         this.flyable.fly();
     }
 
