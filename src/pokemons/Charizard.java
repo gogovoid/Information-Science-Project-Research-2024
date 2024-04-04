@@ -6,6 +6,10 @@ public class Charizard extends Pokemon {
         super.setFlyable(new Wings());
     }
 
+    public Charizard() {
+
+    }
+
     @Override
     public void attack() {
         System.out.println("Wide area fire attack~");
