@@ -7,7 +7,7 @@ public class Charizard extends Pokemon {
     }
 
     public Charizard() {
-
+        System.out.println("Riza~~");
     }
 
     @Override

@@ -2,6 +2,7 @@ package pokemons;
 
 public class Pikachu extends Pokemon {
     public Pikachu() {
+        System.out.println("Pika Pika~");
     }
 
     public Pikachu(String name, int hp) {
