@@ -24,7 +24,7 @@ public abstract class Pokemon{
     public Pokemon(String name, int hp) {
         this.name = name;
         this.hp = hp;
-        System.out.println("parameter constructor~");
+        //System.out.println("parameter constructor~");
     }
 
     public String getName() {
