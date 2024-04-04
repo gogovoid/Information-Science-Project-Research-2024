@@ -5,6 +5,12 @@ public class Charizard extends Pokemon {
         super(name, hp);
         super.setFlyable(new Wings());
         this.attackPoint = 25;
+        this.skills[0] = "claw";
+        this.skills[1] = "dragon's breath";
+        this.skills[2] = "Flare Drive";
+        this.skillPoints[0] = 40;
+        this.skillPoints[1] = 60;
+        this.skillPoints[2] = 120;
         System.out.println("Riza~~");
     }
 

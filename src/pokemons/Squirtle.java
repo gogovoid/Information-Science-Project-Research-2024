@@ -9,6 +9,12 @@ public class Squirtle extends Pokemon{
         super(name, hp);
         super.setFlyable(new NoFly());
         this.attackPoint = 12;
+        this.skills[0] = "body slam";
+        this.skills[1] = "water canon";
+        this.skills[2] = "hydro pump";
+        this.skillPoints[0] = 35;
+        this.skillPoints[1] = 40;
+        this.skillPoints[2] = 110;
         System.out.println("Crrrrrrrr~");
     }
 
