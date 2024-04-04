@@ -1,7 +1,5 @@
 package pokemons;
 
-import pokemons.*;
-
 import java.util.Scanner;
 import java.util.Random;
 
@@ -43,7 +41,7 @@ public class PokemonGame {
                 System.out.println("Exit the program...");
                 break;
             } else if (menu == 1) {
-                System.out.print("1) " + playerPokemon.skills[0] + "  2) " + playerPokemon.skills[1] + " 3)  " + playerPokemon.skills[2] + "  : ");
+                System.out.print("\t1) " + playerPokemon.skills[0] + "  2) " + playerPokemon.skills[1] + "  3) " + playerPokemon.skills[2] + "  : ");
                 int skill = scanner.nextInt() - 1;
                 playerPokemon.attack(wildPokemon, skill);
                 //wildPokemon.attack(playerPokemon, skill);

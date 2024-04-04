@@ -9,12 +9,8 @@ public class Pikachu extends Pokemon {
         super(name, hp);
         super.setFlyable(new NoFly());
         this.attackPoint = 15;
-        this.skills[0] = "cheeks bulging";
-        this.skills[1] = "electric shock";
-        this.skills[2] = "100,000 volts";
-        this.skillPoints[0] = 20;
-        this.skillPoints[1] = 40;
-        this.skillPoints[2] = 90;
+        this.skills = new String[]{"cheeks bulging", "electric shock", "100,000 volts"};
+        this.skillPoints = new Integer[]{20, 40, 90};
         System.out.println("Pika Pika~");
     }
 
