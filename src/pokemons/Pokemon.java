@@ -53,7 +53,7 @@ public abstract class Pokemon{
     }
 
     public abstract void attack();
-    public abstract void attack(Pokemon targetPokemon);
+    public abstract void attack(Pokemon targetPokemon, int skill);
 
     //public abstract void fly();
 }
