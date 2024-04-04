@@ -3,6 +3,7 @@ package pokemons;
 public abstract class Pokemon{
     private String name;
     private int hp;
+    protected int attackPoint;
 
     Flyable flyable;  // has-a
 

@@ -6,7 +6,7 @@ import java.util.Random;
 public class PokemonGame {
     public static void main(String[] args) {
         Random random = new Random();
-        random.setSeed(31);
+        random.setSeed(32);
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Choose your pokemonster. 1) Pikachu(default)  2) Squirtle  3) Charizard : ");
