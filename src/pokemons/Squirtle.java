@@ -1,5 +1,7 @@
 package pokemons;
 
+import java.util.ArrayList;
+
 public class Squirtle extends Pokemon{
     public Squirtle() {
         System.out.println("Crrrrrrrr~");
@@ -9,8 +11,19 @@ public class Squirtle extends Pokemon{
         super(name, hp);
         super.setFlyable(new NoFly());
         this.attackPoint = 12;
-        this.skills = new String[]{"body slam", "water canon", "hydro pump"};
-        this.skillPoints = new Integer[]{35, 40, 110};
+//        this.skills = new String[]{"body slam", "water canon", "hydro pump"};
+//        this.skillPoints = new Integer[]{35, 40, 110};
+
+        this.skills = new ArrayList<>();
+        this.skills.add("body slam");
+        this.skills.add("water canon");
+        this.skills.add("hydro pump");
+
+        this.skillPoints = new ArrayList<>();
+        this.skillPoints.add(35);
+        this.skillPoints.add(40);
+        this.skillPoints.add(110);
+
         System.out.println("Crrrrrrrr~");
     }
 
