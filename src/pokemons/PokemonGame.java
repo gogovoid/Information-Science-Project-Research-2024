@@ -53,7 +53,8 @@ public class PokemonGame {
                 int skill = scanner.nextInt() - 1;
                 playerPokemon.attack(wildPokemon, skill);
                 System.out.println("=====================");
-                wildPokemon.attack(playerPokemon, skill);
+                Random random = new Random();
+                wildPokemon.attack(playerPokemon, random.nextInt(3));
             } else if (menu == 2) {
                 System.out.println("The player's Pokémon runs away.");
                 playerPokemon.performFly();
