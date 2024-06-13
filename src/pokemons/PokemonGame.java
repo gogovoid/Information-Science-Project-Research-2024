@@ -55,9 +55,10 @@ public class PokemonGame {
 //                    System.out.println(skill);
 
                 //System.out.print("\t1) " + playerPokemon.skills.get(1) + "  2) " + playerPokemon.skills.get(2) + "  3) " + playerPokemon.skills.get(3) + "  : ");
-                for(Map.Entry<Integer, String> mapSkill : playerPokemon.getSkills().entrySet())
-                    System.out.println(mapSkill.getKey() + ")" + mapSkill.getValue());
+//                for(Map.Entry<Integer, String> mapSkill : playerPokemon.getSkills().entrySet())
+//                    System.out.println(mapSkill.getKey() + ")" + mapSkill.getValue());
 
+                playerPokemon.getSkills().forEach((k, v) -> System.out.println(k + ")" + v));
                 playerPokemon.attack(wildPokemon, scanner.nextInt());
                 System.out.println("=====================");
                 Random random = new Random();
