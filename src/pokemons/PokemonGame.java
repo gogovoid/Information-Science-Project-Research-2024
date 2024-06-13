@@ -49,8 +49,9 @@ public class PokemonGame {
                 break;
             } else if (menu == 1) {
                 //System.out.print("\t1) " + playerPokemon.skills[0] + "  2) " + playerPokemon.skills[1] + "  3) " + playerPokemon.skills[2] + "  : ");
-                System.out.print("\t1) " + playerPokemon.skills.get(0) + "  2) " + playerPokemon.skills.get(1) + "  3) " + playerPokemon.skills.get(2) + "  : ");
-                int skill = scanner.nextInt() - 1;
+                //System.out.print("\t1) " + playerPokemon.skills.get(0) + "  2) " + playerPokemon.skills.get(1) + "  3) " + playerPokemon.skills.get(2) + "  : ");
+                System.out.print("\t1) " + playerPokemon.skills.get(1) + "  2) " + playerPokemon.skills.get(2) + "  3) " + playerPokemon.skills.get(3) + "  : ");
+                int skill = scanner.nextInt();
                 playerPokemon.attack(wildPokemon, skill);
                 System.out.println("=====================");
                 Random random = new Random();
