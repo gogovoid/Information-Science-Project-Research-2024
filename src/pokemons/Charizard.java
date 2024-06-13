@@ -2,6 +2,7 @@ package pokemons;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Charizard extends Pokemon {
     public Charizard(String name, int hp) {
@@ -11,8 +12,18 @@ public class Charizard extends Pokemon {
 //        this.skills = new String[]{"claw", "dragon's breath", "flare drive"};
 //        this.skillPoints = new Integer[]{20, 40, 90};
 
-        this.skills = new ArrayList<>(Arrays.asList("claw", "dragon's breath", "flare drive"));
-        this.skillPoints = new ArrayList<>(Arrays.asList(20, 40, 90));
+//        this.skills = new ArrayList<>(Arrays.asList("claw", "dragon's breath", "flare drive"));
+//        this.skillPoints = new ArrayList<>(Arrays.asList(20, 40, 90));
+
+        this.skills = new HashMap<>();
+        skills.put(1, "claw");
+        skills.put(2, "dragon's breath");
+        skills.put(3, "flare drive");
+
+        this.skillPoints = new HashMap<>();
+        skillPoints.put("claw", 20);
+        skillPoints.put("dragon's breath", 40);
+        skillPoints.put("flare drive", 90);
 
         System.out.println("Riza~~");
     }
