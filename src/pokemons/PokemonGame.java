@@ -1,5 +1,6 @@
 package pokemons;
 
+import java.util.Map;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -50,9 +51,14 @@ public class PokemonGame {
             } else if (menu == 1) {
                 //System.out.print("\t1) " + playerPokemon.skills[0] + "  2) " + playerPokemon.skills[1] + "  3) " + playerPokemon.skills[2] + "  : ");
                 //System.out.print("\t1) " + playerPokemon.skills.get(0) + "  2) " + playerPokemon.skills.get(1) + "  3) " + playerPokemon.skills.get(2) + "  : ");
-                System.out.print("\t1) " + playerPokemon.skills.get(1) + "  2) " + playerPokemon.skills.get(2) + "  3) " + playerPokemon.skills.get(3) + "  : ");
-                int skill = scanner.nextInt();
-                playerPokemon.attack(wildPokemon, skill);
+//                for(String skill : playerPokemon.getSkills())
+//                    System.out.println(skill);
+
+                //System.out.print("\t1) " + playerPokemon.skills.get(1) + "  2) " + playerPokemon.skills.get(2) + "  3) " + playerPokemon.skills.get(3) + "  : ");
+                for(Map.Entry<Integer, String> mapSkill : playerPokemon.getSkills().entrySet())
+                    System.out.println(mapSkill.getKey() + ")" + mapSkill.getValue());
+
+                playerPokemon.attack(wildPokemon, scanner.nextInt());
                 System.out.println("=====================");
                 Random random = new Random();
                 wildPokemon.attack(playerPokemon, random.nextInt(3));
