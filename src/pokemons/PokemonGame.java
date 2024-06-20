@@ -29,15 +29,22 @@ public class PokemonGame {
         System.out.print("Choose your pokemonster. 1) Pikachu(default)  2) Squirtle  3) Charizard : ");
         int select = scanner.nextInt();
 
-        Pokemon playerPokemon;
-        if(select == 1)
-            playerPokemon = new Pikachu("Pikachu", 50);
-        else if (select == 2)
-            playerPokemon = new Squirtle("Squirtle", 55);
-        else if (select == 3)
-            playerPokemon = new Charizard("Charizard", 74);
-        else
-            playerPokemon = new Pikachu("Pikachu", 50);  // default
+//        Pokemon playerPokemon;
+//        if(select == 1)
+//            playerPokemon = new Pikachu("Pikachu", 50);
+//        else if (select == 2)
+//            playerPokemon = new Squirtle("Squirtle", 55);
+//        else if (select == 3)
+//            playerPokemon = new Charizard("Charizard", 74);
+//        else
+//            playerPokemon = new Pikachu("Pikachu", 50);  // default
+
+        Pokemon playerPokemon = switch (select){
+            case 1 -> new Pikachu("Pikachu", 50);
+            case 2 -> new Squirtle("Squirtle", 55);
+            case 3 -> new Charizard("Charizard", 74);
+            default -> new Pikachu("Pikachu", 50);
+        };
 
         // enemyPokemon
         produceEnemyPokemon();
